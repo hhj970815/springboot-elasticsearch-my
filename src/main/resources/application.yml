@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.174.120:3306/ecommerce?characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+  elasticsearch:
+    rest:
+      uris: [xxx]
+      username: xxx
+      password: xxx
+
+
+server:
+  port: 8080
+
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml
+  type-aliases-package: com.springboot.my.entity
